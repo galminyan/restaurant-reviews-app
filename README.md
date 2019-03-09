@@ -17,7 +17,7 @@ In this project, a static webpage that lacks accessibility is given to be conver
 
 ## Run the Application
 
-In order to run the application you have to run it localy:
+In this folder, start up a simple HTTP server to serve up the site files on your local computer. Python has some simple tools to do this, and you don't even need to know Python. For most people, it's already installed on your computer.
 
 * Download as .zip file or clone this project:
 
@@ -27,6 +27,6 @@ In order to run the application you have to run it localy:
 
 * In this folder, start up a simple HTTP server to serve up the site files on your local computer. Python is required.
 
-* In a terminal, spin up the server with `python -m SimpleHTTPServer 8000` .
+* In a terminal, spin up the server with `python -m http.server 8000` .
 
 * With your server running, visit the site: `http://localhost:8000`.
