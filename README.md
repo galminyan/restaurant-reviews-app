@@ -17,11 +17,8 @@ In this project, a static webpage that lacks accessibility is given to be conver
 
 ## Run the Application
 
-In order to run the application you have some options:
+In order to run the application you have to run it localy:
 
-1. Open it [here](https://galminyan.github.io/restaurant-reviews-app/)
-
-2. Run it localy
 * Download as .zip file or clone this project:
 
     ```
