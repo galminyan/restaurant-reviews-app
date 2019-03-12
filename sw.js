@@ -1,5 +1,5 @@
 let staticCacheName = 'restaurant-static-v1';
-
+// Installation of service worker and create a cache
 self.addEventListener('install', function(event) {
 	event.waitUntil(
 		caches.open(staticCacheName).then(function(cache) {
@@ -28,6 +28,7 @@ self.addEventListener('install', function(event) {
 	);
 });
 
+//Updating the Static Cache 
 self.addEventListener('activate', function(event) {
 	event.waitUntil(
 		caches.keys()
@@ -43,7 +44,7 @@ self.addEventListener('activate', function(event) {
 		})
 	);
 })
-
+//fetch the cache using offline first
 self.addEventListener('fetch', function(event) {
 	event.respondWith(
 		caches.match(event.request)
